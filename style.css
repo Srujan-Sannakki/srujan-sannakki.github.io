@@ -1,0 +1,58 @@
+:root{--ink:#20213d;--blue:#4542c9;--paper:#f8f7f4;--line:#d5d3dd;color:var(--ink);background:var(--paper);font:16px/1.55 "Instrument Sans",Inter,system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-underline-offset:.28em}a:hover{color:var(--blue)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #dc6927;outline-offset:4px}
+main,header{width:min(1216px,calc(100% - 8vw));margin:auto}header{display:flex;justify-content:space-between;align-items:center;min-height:83px;border-bottom:1px solid var(--line)}nav,.links,.social{display:flex;align-items:center;gap:1.4rem}.brand,nav a{text-decoration:none;font-weight:650}.brand{display:flex;gap:.65rem;align-items:center}.brand b{display:grid;place-items:center;background:var(--ink);color:white;border-radius:9px;width:39px;height:39px;letter-spacing:-.13em;padding-right:.12em}.skip{position:absolute;top:-100px}.skip:focus{top:0;background:white}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center;padding:clamp(3rem,7vw,6rem) 0}.eyebrow,.screenhead,.caption span,.num,small,.type,.brief footer{font:500 .875rem/1.45 "IBM Plex Mono",ui-monospace,monospace}.eyebrow{margin:0 0 1.2rem;color:var(--blue)}h1,h2,h3,p,figure{margin:0}h1,h2,h3,.caption a{line-height:1.06;letter-spacing:-.055em}h1{font-size:clamp(4rem,7vw,7.2rem)}h1 span,h2 span{color:var(--blue)}.statement{font:italic clamp(2.8rem,4.15vw,4.5rem)/.99 "Instrument Serif",Georgia,serif;color:var(--blue);letter-spacing:-.05em;margin:.65rem 0 1.5rem}.statement br{display:none}.statement br:after{content:" "}.summary{max-width:54ch;color:#515168}.links{margin-top:1.6rem}.button{padding:.78rem 1.2rem;background:var(--ink);color:white;border-radius:7px;text-decoration:none;font-weight:650}.button:hover{background:var(--blue);color:white}.textlink,.social a{font-weight:650}
+.explorer{border-radius:17px;overflow:hidden;background:#1d1c42;box-shadow:0 16px 40px #24215d18;color:white}.screen{padding:1.25rem 1.5rem 1.6rem;background-color:#36368c;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px),radial-gradient(ellipse at 48% 45%,#665eca,transparent 74%);background-size:22px 22px,22px 22px,cover}.screenhead{display:flex;justify-content:space-between;color:#e4e2ff}.screen canvas{display:block;width:100%;height:auto}.caption span{display:block;color:#ffe2b7}.caption a{font-size:clamp(1.6rem,3vw,2.8rem);font-weight:700;text-decoration:none;color:white}.caption a:hover{text-decoration:underline}.selectors{display:grid;grid-template-columns:repeat(5,1fr);padding:.5rem;gap:2px}.selectors button{font:600 .875rem/1.3 inherit;font-family:inherit;font-size:.875rem;color:#eae8ff;background:transparent;border:0;border-radius:6px;padding:.75rem .2rem;cursor:pointer}.selectors button[aria-pressed=true]{background:#dfdbff;color:#211c54}
+h2{font-size:clamp(2.3rem,4.7vw,4.8rem)}.sectionhead{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin:1rem 0 2rem}.sectionhead p,.background p{color:#55566b}details{border-top:1px solid var(--line);scroll-margin:1rem}details:last-child{border-bottom:1px solid var(--line)}summary{list-style:none;display:grid;grid-template-columns:3rem 1fr minmax(10rem,24%) 2rem;gap:1rem;align-items:center;padding:1.45rem .7rem;cursor:pointer}summary::-webkit-details-marker{display:none}summary:after{content:"+";font-size:1.5rem;color:var(--blue);text-align:center}details[open] summary:after{content:"−"}summary:hover,details[open]{background:#eeecfa}summary strong{font-size:clamp(1.3rem,2.3vw,2rem);letter-spacing:-.045em}.num{color:var(--blue)}.type{color:#55566b}.brief{max-width:78ch;padding:0 2rem 2rem 4.7rem}.brief h3,.background h3{font-size:1.45rem;margin-bottom:.6rem}.brief p{margin:.75rem 0}.brief footer{margin:1rem 0;color:#504890}.brief a{font-weight:650;color:var(--blue)}.example{border-left:3px solid #ff9457;padding-left:1rem}
+.background{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;padding:5rem 0}.background article{border-top:1px solid var(--line);padding:1.1rem 0}.background small{color:var(--blue)}.background h3{margin-top:.45rem}#contact{background:#232242;color:white;border-radius:16px;padding:clamp(1.5rem,5vw,4rem);margin-bottom:2rem}#contact .eyebrow{color:#ffbf90}#contact h2{margin-bottom:.8rem}.email{display:inline-block;color:#ffbf90;font-size:clamp(1.2rem,3vw,2rem);margin:1.3rem 0}.social{flex-wrap:wrap}.social a:hover,.email:hover{color:white}
+@media(max-width:800px){.hero,.background{grid-template-columns:1fr}.hero{gap:2rem}.background{gap:1.5rem;padding:3rem 0}.sectionhead{display:block}.sectionhead p{margin-top:.5rem}summary{grid-template-columns:2rem 1fr 1.5rem}.type{grid-column:2;grid-row:2}.num{grid-row:1}.brief{padding-left:3.7rem}summary:after{grid-column:3;grid-row:1/3}.screen canvas{max-height:210px;object-fit:contain}}
+@media(max-width:450px){header{min-height:68px}nav,.social{gap:.8rem}nav a,.brand{font-size:.9rem}.hero{padding:2.5rem 0}.selectors button{font-size:.8rem}.screen{padding:1rem}summary{gap:.25rem .5rem}.brief{padding-left:1rem}.links{gap:1rem}}
+
+:root {
+  color-scheme: dark;
+  --paper: #0b1120;
+  --ink: #f1f4ff;
+  --blue: #b3b4ff;
+  --line: #303b50;
+  --muted: #bcc6dc;
+}
+body {
+  background: radial-gradient(ellipse 75% 32rem at 83% 5%, #1c2444 0%, transparent 85%), var(--paper);
+}
+.brand b, .button { background: #ced3ff; color: #13192f; }
+.button:hover { background: #eef0ff; color: #13192f; }
+.summary, .sectionhead p, .background p, .type, .brief p { color: var(--muted); }
+.skip:focus { color: var(--paper); }
+.explorer {
+  --project: #8ae6c8;
+  --bloom: #28505a;
+  border: 1px solid #52667b;
+  box-shadow: 0 24px 60px #03071070;
+  background: #111928;
+}
+[data-project="clariflow"], #clariflow { --project: #cab0ff; --bloom: #49315f; }
+[data-project="library"], #library { --project: #ffcc8d; --bloom: #584431; }
+[data-project="disaster"], #disaster { --project: #95cfff; --bloom: #28465f; }
+[data-project="game"], #game { --project: #ffabbf; --bloom: #60354e; }
+#glove { --project: #8ae6c8; }
+.screen {
+  background-color: #101b2b;
+  background-image: linear-gradient(#e1f4ff0b 1px, transparent 1px),
+    linear-gradient(90deg, #e1f4ff0b 1px, transparent 1px),
+    radial-gradient(ellipse at 46% 43%, var(--bloom), transparent 80%);
+}
+.screenhead { color: #d7e3f1; }
+.caption span { color: var(--project); }
+.selectors { border-top: 1px solid var(--line); }
+.selectors button:hover { background: #27354b; }
+.selectors button[aria-pressed="true"] { background: var(--project); color: #121c2a; }
+details .num, details summary:after, .brief footer, .brief a { color: var(--project); }
+summary:hover, details[open] { background: #172135; }
+details[open] { box-shadow: inset 3px 0 var(--project); }
+summary:after { border: 1px solid var(--line); border-radius: 50%; line-height: 1.2; }
+.brief a:hover { color: #fff; }
+#contact {
+  background: radial-gradient(ellipse at top right, #353856, transparent 70%), #191f35;
+  border: 1px solid #404860;
+}
+::selection { background: #b3b4ff; color: #101729; }
